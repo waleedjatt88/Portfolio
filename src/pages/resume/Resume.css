@@ -1,0 +1,165 @@
+.resume-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 120px 8%;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#resumespan {
+  color: #f0ad4e; 
+    font-weight: 700;
+}
+
+.background-text-resume {
+  position: absolute;
+  top: -25px;
+  left: 25%; /* Centering the text */
+  font-size: 9rem; /* Viewport width ke hisab se size */
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 30px;
+  text-align: left; 
+  position: relative;
+  z-index: 1;
+}
+
+.resume-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-item {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.resume-item:hover {
+  transform: translateY(-10px);
+  border-color: #f0ad4e;
+}
+
+.item-date {
+  display: inline-block;
+  background-color: #f0ad4e;
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.item-subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.item-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.download-button-container {
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.download-cv-btn-resume {
+  background-color: #f0ad4e;
+  color: #000;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.download-cv-btn-resume:hover {
+  background-color: #ffffff;
+  transform: translateY(-8px);
+}
+
+
+/* ===> RESPONSIVE DESIGN <=== */
+@media screen and (max-width: 992px) {
+  .resume-grid {
+    grid-template-columns: 1fr; /* 1 column layout */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .resume-section {
+    padding: 80px 5%;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .background-text-resume {
+    font-size: 25vw;
+  }
+  
+  .resume-item {
+      padding: 25px;
+  }
+
+  .item-title {
+      font-size: 1.3rem;
+  }
+}

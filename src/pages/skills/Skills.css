@@ -1,0 +1,110 @@
+.skills-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 120px 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.background-text-skills {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+  user-select: none;
+}
+
+.section-header-skills {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header-skills h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-header-skills p {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 550px;
+  margin: 0 auto;
+}
+#skillspan {
+  color: #f0ad4e;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 8rem;
+  text-align: left;
+}
+
+.skill-item {
+  position: relative;
+}
+
+/* ===> YAHAN BADLAAV KIYA GAYA HAI <=== */
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  
+  /* Text container ko bhi bar ki tarah 80% width de kar center mein kar diya hai */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-name,
+.skill-percentage {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Progress bar ka container */
+.progress-bar-container-modern {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 11px;
+  background-color: #2a2a2a;
+  border-radius: 3px;
+}
+
+/* Progress bar ka filled hissa */
+.progress-level-modern {
+  height: 100%;
+  background-color: #f0ad4e;
+  border-radius: 3px;
+  position: relative;
+  transition: width 1.8s cubic-bezier(0.65, 0, 0.35, 1);}
+
+.progress-level-modern::after {
+  animation: fillFinalBar 2.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes fillFinalBar {
+  from {
+    width: 0%;
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-section {
+    padding: 80px 0;
+  }
+}

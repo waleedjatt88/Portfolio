@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 8%;
+  min-height: 100vh;
+  font-family: 'Poppins', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 55%;
+}
+
+.greeting {
+  color: #f0ad4e;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.headline-wrapper {
+  min-height: 200px; 
+}
+.headline-small {
+  font-size: 5rem; /* Thora chota font size */
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.headline-large {
+  font-size: 4.4rem; /* Bara font size */
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  color: #ffffff; /* Default rang safed */
+}
+.headline-large .highlight {
+  color: #f0ad4e;
+}
+.headline-large .text-white {
+  color: #ffffff;
+}
+.sub-headline {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+.headline {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.headline .highlight {
+  color: #f0ad4e;
+}
+
+.sub-headline {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+.button-group {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 14px 35px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hire-me-btn {
+  background-color: #f0ad4e;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-8px);
+}
+
+.my-works-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.my-works-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-8px);
+}
+
+.hero-image {
+  flex-shrink: 0;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 8%;
+  display: flex;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+
+/* Text aur Image, dono ke liye "Zoom Out" animation */
+.fade-in {
+  animation: zoomOutFadeIn 0.8s ease-in-out;
+}
+
+@keyframes zoomOutFadeIn {
+  from {
+    opacity: 0;
+    /* Shuru mein element 5% bara hoga */
+    transform: scale(1.05); 
+  }
+  to {
+    opacity: 1;
+    /* Aakhir mein apne asal size par aa jayega */
+    transform: scale(1);
+  }
+}
