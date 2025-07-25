@@ -18,7 +18,7 @@ const About = () => {
     <section id="about" className="about-section" >
       <div className="about-image-container"data-aos="fade-right">
         <img src={profileImage} alt="Waleed Iftikhar" loading="laz" />
-      </div>y
+      </div>
 
       <div className="about-content-container">
         <span className="background-text">About</span>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
 
         <div className="project-counter"data-aos="fade-up">
-          <span className="project-number">120</span> Project complete
+          <span className="project-number">3</span> Project complete
         </div>
         <div data-aos="fade-up">
         <a href={CV_FILE_URL} download className="download-cv-btn">

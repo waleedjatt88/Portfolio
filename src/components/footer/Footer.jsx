@@ -56,8 +56,19 @@ const Footer = () => {
           </ul>
           <div className="social-icons">
             <a href="#"><FaTwitter /></a>
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
+            <a
+             href="https://www.facebook.com/ch.waleed.98622/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+             <FaFacebookF /></a>
+             
+            <a
+              href="https://www.instagram.com/waleed_jutt_88/" // <== Yahan apne Instagram ka link daalein
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+            <FaInstagram /></a>
           </div>
         </div>
 

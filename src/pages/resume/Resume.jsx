@@ -31,10 +31,10 @@ const Resume = () => {
             <div data-aos="fade-right"> 
             <div className="resume-item" >
               <span className="item-date">2022-2026</span>
-              <h3 className="item-title">Master Degree of IT</h3>
+              <h3 className="item-title">BACHELOR IN Degree OF IT</h3>
               <h4 className="item-subtitle">ISLAMIA UNIVERSITY</h4>
               <p className="item-description">
-I hold a Master’s degree in Information Technology from The Islamia University, where I gained strong expertise in modern web technologies and software development.              </p>
+I hold a Bachelor’s degree in Information Technology from The Islamia University, where I gained strong expertise in modern web technologies and software development.              </p>
             </div>
             </div>
             <div data-aos="fade-right"> 

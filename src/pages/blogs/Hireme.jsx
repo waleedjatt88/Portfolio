@@ -8,19 +8,19 @@ const HireMe = () => {
       <section className="stats-section">
         <div className="container stats-grid">
           <div className="stat-item">
-            <span className="stat-number">100</span>
+            <span className="stat-number">8</span>
             <span className="stat-label">Awards</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">1,200</span>
+            <span className="stat-number">3</span>
             <span className="stat-label">Complete Projects</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">1,200</span>
+            <span className="stat-number">1</span>
             <span className="stat-label">Happy Customers</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">500</span>
+            <span className="stat-number">1</span>
             <span className="stat-label">Cups of coffee</span>
           </div>
         </div>

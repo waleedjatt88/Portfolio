@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-area">
-          <div className="contact-image" data-aos="fade-right">
+          <div className="contact-image">
             <img src={profileImage} alt="image"  loading="laz"/>
           </div>
           <form className="form-container" data-aos="fade-left">
