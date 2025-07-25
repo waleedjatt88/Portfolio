@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Routing ke liye
-import '../../pages/contact/contact.css'; // Hum wahi CSS file istemal karenge
+import { Link } from 'react-router-dom'; 
+import './Footer.css'; 
 
 // Icons ke liye
 import { FaTwitter, FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';

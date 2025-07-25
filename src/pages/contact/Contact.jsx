@@ -45,7 +45,7 @@ const Contact = () => {
 
         <div className="contact-form-area">
           <div className="contact-image" data-aos="fade-right">
-            <img src={profileImage} alt="Waleed Iftikhar" />
+            <img src={profileImage} alt="image"  loading="laz"/>
           </div>
           <form className="form-container" data-aos="fade-left">
             <input type="text" placeholder="Your Name" required />

@@ -17,8 +17,8 @@ const About = () => {
   return (
     <section id="about" className="about-section" >
       <div className="about-image-container"data-aos="fade-right">
-        <img src={profileImage} alt="Waleed Iftikhar" loading="lazy" />
-      </div>
+        <img src={profileImage} alt="Waleed Iftikhar" loading="laz" />
+      </div>y
 
       <div className="about-content-container">
         <span className="background-text">About</span>
