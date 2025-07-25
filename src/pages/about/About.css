@@ -9,45 +9,42 @@
   color: #ffffff;
   padding: 100px 8%;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden; /* Background text ko overflow hone se rokne ke liye */
+  overflow: hidden;
   min-height: 100vh;
 }
 
-/* Image styling */
 .about-image-container {
-  flex-basis: 35%; /* Image ke liye jagah */
+  flex-basis: 35%;
 }
 
 .about-image-container img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Halka sa border radius */
+  border-radius: 10px;
 }
 
-/* Content styling */
 .about-content-container {
-  flex-basis: 65%; /* Content ke liye zyada jagah */
-  position: relative; /* Background text ke liye zaroori */
+  flex-basis: 65%; 
+  position: relative; 
 }
 
-/* Background "About" text */
 .background-text {
   position: absolute;
   top: -45x;
   left: 0;
   font-size: 9rem;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.05); /* Bohat halka rang */
+  color: rgba(255, 255, 255, 0.05); 
   z-index: 0;
-  user-select: none; /* Text ko select na kiya ja sake */
-  white-space: nowrap; /* Text ko ek line mein rakhe */
+  user-select: none;
+  white-space: nowrap;
 }
 
 .about-heading {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 20px;
-  position: relative; /* Upar wale content ke */
+  position: relative; 
   z-index: 1;
 }
 #aboutspan {
@@ -67,8 +64,8 @@
 
 .personal-details {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns ka grid */
-  gap: 15px 30px; /* row and column gap */
+  grid-template-columns: 1fr 1fr; 
+  gap: 15px 30px; 
   margin-bottom: 30px;
   position: relative;
   z-index: 1;
@@ -99,7 +96,7 @@
 }
 
 .project-number {
-  color: #f0ad4e; /* Highlight color */
+  color: #f0ad4e; 
   font-weight: 700;
   font-size: 1.5rem;
   margin-right: 10px;
@@ -122,23 +119,21 @@
 .download-cv-btn:hover {
   background-color: #ffffff;
   transform: translateY(-8px);
-  box-shadow: 0 4px 15px rgba(240, 173, 78, 0.2);
+  box-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 10px #fff;
 }
 
 
-/* ===> RESPONSIVE DESIGN <=== */
 
-/* Tablets aur chotay laptops ke liye */
 @media screen and (max-width: 992px) {
   .about-section {
-    flex-direction: column; /* Layout ko vertical kar dein */
-    text-align: center; /* Content ko center mein le aayein */
+    flex-direction: column;
+    text-align: center;
     gap: 3rem;
   }
   
   .about-image-container,
   .about-content-container {
-    flex-basis: 100%; /* Poori width le lein */
+    flex-basis: 100%; 
   }
 
   .about-description {
@@ -148,7 +143,7 @@
   }
   
   .personal-details {
-      text-align: left; /* Details ko left-aligned rakhein behtar parhne ke liye */
+      text-align: left; 
   }
 
   .background-text {
@@ -159,7 +154,6 @@
   }
 }
 
-/* Mobile screens ke liye */
 @media screen and (max-width: 576px) {
     .about-heading {
         font-size: 2rem;
@@ -171,7 +165,7 @@
     }
 
     .personal-details {
-        grid-template-columns: 1fr; /* Grid ko 1 column ka bana dein */
+        grid-template-columns: 1fr; 
     }
 
     .about-section {

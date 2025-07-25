@@ -1,60 +1,66 @@
-import React from 'react';
-// ===> Step 1: `Link` component ko istemal karna hai <===
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'; 
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => setIsOpen(!isOpen);
+  const closeMobileMenu = () => setIsOpen(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         
-        {/* ===> Step 2: 'a' ko 'Link' aur 'href' ko 'to' se badlein <=== */}
-        <Link to="/#home" className="navbar-logo">
+        <Link to="/#home" className="navbar-logo" onClick={closeMobileMenu}>
            <span id='portspan'>PORT</span>FOLIO
         </Link>
         
-        <ul className="nav-menu">
+        <div className="menu-icon" onClick={handleToggle}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        
+        <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            {/* ===> Step 3: Har link ke liye 'a' ko 'Link' aur 'href' ko 'to' karein <=== */}
-            {/* Note: hum "#" ka istemal kar rahe hain taake page scroll ho */}
-            <Link to="/#home" className="nav-links">
+            <NavLink to="/#home" className="nav-links" onClick={closeMobileMenu}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#about" className="nav-links">
+            <NavLink to="/#about" className="nav-links" onClick={closeMobileMenu}>
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#resume" className="nav-links">
+            <NavLink to="/#resume" className="nav-links" onClick={closeMobileMenu}>
               Resume
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#services" className="nav-links">
+            <NavLink to="/#services" className="nav-links" onClick={closeMobileMenu}>
               Services
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#skills" className="nav-links">
+            <NavLink to="/#skills" className="nav-links" onClick={closeMobileMenu}>
               Skills
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#projects" className="nav-links">
+            <NavLink to="/#projects" className="nav-links" onClick={closeMobileMenu}>
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#blog" className="nav-links">
+            <NavLink to="/#blog" className="nav-links" onClick={closeMobileMenu}>
               My Blog
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/#contact" className="nav-links">
+            <NavLink to="/#contact" className="nav-links" onClick={closeMobileMenu}>
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

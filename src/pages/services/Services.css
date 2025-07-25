@@ -53,7 +53,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 25px;
   position: relative;
   z-index: 1;
@@ -68,14 +68,14 @@
 }
 .service-card:hover {
    transform: translateY(-10px) ;
-    background-color:#E3B134;
+    background-color: rgba(247, 171, 66, 0.9); 
   border-color:   white; 
  }
 
 
 .service-icon {
-  font-size: 3.5rem; /* Icon size */
-  color: #f0ad4e; /* Highlight color */
+  font-size: 3.5rem; 
+  color: #f0ad4e; 
   margin-bottom: 30px;
   transition: color 0.3s ease;
 }
@@ -113,10 +113,9 @@
   background-color: #000000; 
 }
 
-/* ===> RESPONSIVE DESIGN <=== */
 @media screen and (max-width: 992px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -130,7 +129,7 @@
   }
   
   .services-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr; 
   }
 
   .section-header-services h2 {

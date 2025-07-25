@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
-// ====> YAHAN APNI DONO TASVEERON KA SAHI PATH LIKHEIN <====
 import profileImage1 from '../../assets/image1.png'; 
 import profileImage2 from '../../assets/image2.png'; 
 
@@ -22,7 +21,6 @@ const Hero = () => {
         
         <div className="headline-wrapper">
           {isFirstView ? (
-            // ====> VIEW 1 (YAHAN BADLAAV KIYA GAYA HAI) <====
             <div key="frontend" className="fade-in">
               <h1 className="headline-small">I'm a</h1>
               <h1 className="headline-large">
@@ -30,7 +28,6 @@ const Hero = () => {
               </h1>
             </div>
           ) : (
-            // ====> VIEW 2 (Yeh pehle jaisa hi hai) <====
             <div key="name" className="fade-in">
               <h1 className="headline-large">
                 I'm <span className="highlight">Waleed Iftikhar</span>
@@ -52,6 +49,7 @@ const Hero = () => {
           src={isFirstView ? profileImage1 : profileImage2}
           alt="Waleed Iftikhar"
           className="fade-in"
+          loading="lazy"
         />
       </div>
 

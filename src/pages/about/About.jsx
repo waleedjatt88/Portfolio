@@ -3,30 +3,27 @@ import AOS from 'aos';
 import './About.css';
 
 
-// ==> Yahan apni tasveer ka sahi path daalein
 import profileImage from '../../assets/image1.png'; 
 
 const About = () => {
    useEffect(() => {
     AOS.init({
-      duration: 900, // Animation kitni der chalega (milliseconds mein)
-      once: true,     // Animation sirf ek baar chalega
+      duration: 900,
+      once: true,    
     });
   }, []);
-  // Apni CV file ko 'public' folder mein rakhein aur yahan uska naam likhein
   const CV_FILE_URL = '\Waleed Iftikhar -CV.pdf';
 
   return (
     <section id="about" className="about-section" >
       <div className="about-image-container"data-aos="fade-right">
-        <img src={profileImage} alt="Waleed Iftikhar" />
+        <img src={profileImage} alt="Waleed Iftikhar" loading="lazy" />
       </div>
 
       <div className="about-content-container">
-        {/* Yeh "About" text background mein rahega */}
         <span className="background-text">About</span>
         
-        <h2 className="about-heading"data-aos="fade-down">
+        <h2 className="about-heading"data-aos="fade-up">
           <span id='aboutspan'>About</span> Me</h2>
         
         <p className="about-description"data-aos="fade-left">

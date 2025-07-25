@@ -8,7 +8,7 @@ const ScrollToHashElement = () => {
   useEffect(() => {
     const { hash } = location;
     if (hash) {
-      const element = document.getElementById(hash.substring(1)); // '#' ko hatane ke liye
+      const element = document.getElementById(hash.substring(1));
       if (element) {
         element.scrollIntoView({
           behavior: 'smooth',
@@ -16,9 +16,9 @@ const ScrollToHashElement = () => {
         });
       }
     }
-  }, [location]); // Yeh code har baar chalega jab URL badlega
+  }, [location]);
 
-  return null; // Yeh component screen par kuch nahi dikhata
+  return null;
 };
 
 export default ScrollToHashElement;

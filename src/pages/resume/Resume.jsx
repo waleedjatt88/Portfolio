@@ -1,37 +1,32 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import './Resume.css'; // Is file ko neeche se copy karein
+import './Resume.css'; 
 
 const Resume = () => {
 
-  // AOS (Animate on Scroll) ko initialize karna
   useEffect(() => {
     AOS.init({
-      duration: 900, // Animation ka time
-      once: true,     // Animation sirf ek baar hoga
+      duration: 900, 
+      once: true,     
     });
   }, []);
 
-  // Apni CV file ka link (public folder se)
+  
   const CV_FILE_URL = '\Waleed Iftikhar -CV.pdf';
 
   return (
     <section id="resume" className="resume-section">
       <div className="resume-container">
         
-        {/* Background Text */}
         <span className="background-text-resume">Resume</span>
         
-        {/* Main Heading */}
-        <div className="section-header" data-aos="fade-down">
+        <div className="section-header" data-aos="fade-up">
           <h2><span id='resumespan'>Res</span>ume</h2>
           <p>"I believe in continuous growth—every challenge is an opportunity to learn, improve, and move one step closer to success."</p>
         </div>
 
-        {/* Resume Grid */}
         <div className="resume-grid">
 
-          {/* Column 1: Education */}
           <div className="resume-column">
             <div data-aos="fade-right"> 
             <div className="resume-item" >
@@ -62,7 +57,6 @@ Successfully completed a Course Microsoft Office Applications, gaining hands-on 
           </div>
           </div>
 
-          {/* Column 2: Experience */}
           <div className="resume-column">
             <div data-aos="fade-left"> 
             <div className="resume-item">
@@ -97,7 +91,6 @@ Completed a comprehensive Web Development course covering HTML, CSS, JavaScript,
           
         </div>
 
-        {/* Download Button */}
          <div data-aos="fade-up"> 
         <div className="download-button-container">
             <a href={CV_FILE_URL} download className="download-cv-btn-resume">

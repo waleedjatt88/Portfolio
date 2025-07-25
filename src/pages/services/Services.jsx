@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import './Services.css'; // Is file ko neeche se copy karein
+import './Services.css'; 
 import { FaSquareWebAwesomeStroke,FaWebflow,FaSearchengin } from "react-icons/fa6";
 import { SiTmux } from "react-icons/si";
 import { MdDeveloperMode } from "react-icons/md";
 
 import { FaPhotoVideo } from 'react-icons/fa';
 
-// Service data ko ek jagah manage karna behtar hai
 const servicesData = [
   {
     icon: <FaSquareWebAwesomeStroke/>,
@@ -16,7 +15,7 @@ const servicesData = [
   },
   {
     icon: <SiTmux />,
-    title: 'UI/UX Designer', // Note: Correct spelling is "Photography"
+    title: 'UI/UX Designer', 
     aosDelay: '200',
   },
   {
@@ -42,7 +41,6 @@ const servicesData = [
 ];
 
 const Services = () => {
-  // AOS (Animate on Scroll) ko initialize karna
   useEffect(() => {
     AOS.init({
       duration: 900,
@@ -54,16 +52,14 @@ const Services = () => {
     <section id="services" className="services-section">
       <div className="services-container">
 
-        {/* Background Text */}
         <span className="background-text-services">Services</span>
 
-        {/* Main Heading */}
-        <div className="section-header-services" data-aos="fade-down">
+        <div className="section-header-services" data-aos="fade-up">
           <h2><span id='servicesspan'>Serv</span>ices</h2>
           <p>"I turn ideas into powerful, interactive web experiences—driven by creativity, code, and a passion for seamless design"</p>
         </div>
 
-        {/* Services Grid */}
+        
         <div className="services-grid">
           {servicesData.map((service, index) => (
             <div 

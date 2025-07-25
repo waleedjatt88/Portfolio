@@ -37,9 +37,10 @@
   max-width: 550px;
   margin: 0 auto;
 }
+
 #skillspan {
   color: #f0ad4e;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .skills-grid {
@@ -53,25 +54,18 @@
   position: relative;
 }
 
-/* ===> YAHAN BADLAAV KIYA GAYA HAI <=== */
 .skill-info {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 8px;
-  
-  /* Text container ko bhi bar ki tarah 80% width de kar center mein kar diya hai */
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.skill-name,
-.skill-percentage {
+.skill-name {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-/* Progress bar ka container */
 .progress-bar-container-modern {
   width: 80%;
   margin-left: auto;
@@ -81,30 +75,37 @@
   border-radius: 3px;
 }
 
-/* Progress bar ka filled hissa */
 .progress-level-modern {
   height: 100%;
   background-color: #f0ad4e;
   border-radius: 3px;
   position: relative;
-  transition: width 1.8s cubic-bezier(0.65, 0, 0.35, 1);}
-
-.progress-level-modern::after {
-  animation: fillFinalBar 2.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  transition: width 1.8s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-@keyframes fillFinalBar {
-  from {
-    width: 0%;
-  }
+.skill-percentage-moving {
+  position: absolute;
+  bottom: 100%; 
+  right: 0;      
+  transform: translateX(50%);
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
 }
 
-/* Responsive design */
 @media screen and (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
   .skills-section {
     padding: 80px 0;
+  }
+
+  .skill-info,
+  .progress-bar-container-modern {
+    width: 100%;
   }
 }

@@ -30,18 +30,18 @@
   min-height: 200px; 
 }
 .headline-small {
-  font-size: 5rem; /* Thora chota font size */
+  font-size: 5rem; 
   font-weight: 700;
   margin: 0;
   line-height: 1.2;
   color: #ffffff;
 }
 .headline-large {
-  font-size: 4.4rem; /* Bara font size */
+  font-size: 4.4rem; 
   font-weight: 800;
   margin: 0;
   line-height: 1.2;
-  color: #ffffff; /* Default rang safed */
+  color: #ffffff; 
 }
 .headline-large .highlight {
   color: #f0ad4e;
@@ -97,6 +97,8 @@
 .hire-me-btn:hover {
   background-color: #ffffff;
   transform: translateY(-8px);
+  box-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 10px #fff;
+
 }
 
 .my-works-btn {
@@ -110,6 +112,8 @@
   background-color: #ffffff;
   color: #000000;
   transform: translateY(-8px);
+  box-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 10px #fff;
+
 }
 
 .hero-image {
@@ -147,7 +151,6 @@
 }
 
 
-/* Text aur Image, dono ke liye "Zoom Out" animation */
 .fade-in {
   animation: zoomOutFadeIn 0.8s ease-in-out;
 }
@@ -155,12 +158,10 @@
 @keyframes zoomOutFadeIn {
   from {
     opacity: 0;
-    /* Shuru mein element 5% bara hoga */
     transform: scale(1.05); 
   }
   to {
     opacity: 1;
-    /* Aakhir mein apne asal size par aa jayega */
     transform: scale(1);
   }
 }

@@ -21,8 +21,8 @@
 .background-text-resume {
   position: absolute;
   top: -25px;
-  left: 25%; /* Centering the text */
-  font-size: 9rem; /* Viewport width ke hisab se size */
+  left: 25%; 
+  font-size: 9rem; 
   font-weight: 800;
   color: rgba(255, 255, 255, 0.05);
   z-index: 0;
@@ -52,7 +52,7 @@
 
 .resume-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   text-align: left; 
   position: relative;
@@ -132,13 +132,14 @@
 .download-cv-btn-resume:hover {
   background-color: #ffffff;
   transform: translateY(-8px);
+  box-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 10px #fff;
+
 }
 
 
-/* ===> RESPONSIVE DESIGN <=== */
 @media screen and (max-width: 992px) {
   .resume-grid {
-    grid-template-columns: 1fr; /* 1 column layout */
+    grid-template-columns: 1fr;
   }
 }
 
